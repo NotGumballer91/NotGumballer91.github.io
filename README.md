@@ -1,1 +1,0 @@
-# genshintldr.github.io
