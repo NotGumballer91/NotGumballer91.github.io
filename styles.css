@@ -1,0 +1,73 @@
+body{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(images/bg.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	color:white;
+	font-family: sans-serif;
+	overflow: visible;
+	padding: 100px;
+}
+
+.header{
+	background-color: black;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 50px;
+	z-index: 10;
+}
+
+.main{
+	align-content: center;
+	padding: 20px;
+	text-align: center;
+}
+
+.container{
+	padding-top: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 20px;
+	text-align: left;
+}
+
+.header1 {
+	font-size: 40px;
+	font-weight: bold;
+	padding: 10%;
+}
+
+.accordion {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url(images/albedo.png);
+    background-position: 50% 20%;
+    background-size: auto;
+    background-color: transparent;
+    border-radius: 50px;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    text-align: left;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+  
+.panel {
+    padding: 0 18px;
+    background-color: rgb(151, 48, 48);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
